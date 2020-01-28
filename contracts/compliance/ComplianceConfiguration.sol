@@ -8,14 +8,14 @@ import './ComplianceProviderInterface.sol';
 
 
 contract ComplianceConfigurationInterface {
-    function isTransferAllowed(address _from, address _to, uint _value) public view returns(bool);
+    function isTransferAllowed(address _from, address _to, uint _value)
+        public view returns(bool);
 
     function isTransferToICAPAllowed(address _from, bytes32 _icap, uint _value)
-        public
-        view
-        returns(bool);
+        public view returns(bool);
 
-    function processTransferResult(address _from, address _to, uint _value, bool _success) public;
+    function processTransferResult(address _from, address _to, uint _value, bool _success)
+        public;
 
     function processTransferToICAPResult(address _from, bytes32 _icap, uint _value, bool _success)
         public;
@@ -186,7 +186,7 @@ ComplianceConfigurationInterface, Countries, Regions {
     function processTransferResult(address, address, uint, bool) public {
 
     }
-    
+
     // solhint-disable-next-line no-empty-blocks
     function processTransferToICAPResult(address, bytes32, uint, bool) public {
 
