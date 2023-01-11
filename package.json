@@ -14,7 +14,7 @@
     "bignumber.js": "4.1.0",
     "bluebird": "3.4.7",
     "ganache-cli": "6.1.8",
-    "truffle": "4.1.8",
+    "truffle": "4.1.17",
     "web3": "0.20.2"
   },
   "devDependencies": {
